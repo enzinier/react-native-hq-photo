@@ -90,10 +90,10 @@ class PhotoView extends Component {
     );
   }
 
-  _onScroll = (e) => {
-    let offset = e.nativeEvent.contentOffset;
-    if(offset) {
-      let page = Math.round(offset.x / WIDTH);
+  _onScroll = (event) => {
+    let offsetX = event.nativeEvent.contentOffset.x;
+    if(offsetX) {
+      let page = Math.round(offsetX / WIDTH);
       if (page === this.pagePrevious) {
         return;
       }
@@ -136,14 +136,8 @@ class PhotoView extends Component {
                     showsHorizontalScrollIndicator={false}
                     scrollEventThrottle={256}
                     directionalLockEnabled={true}
-                    onScrollBeginDrag={() => {
-                      console.log('Begin');
-                      this.isScrolling = true
-                    }}
-                    onScrollEndDrag={() => {
-                      console.log('End');
-                      this.isScrolling = false
-                    }}
+                    onScrollBeginDrag={() => this.isScrolling = true}
+                    onScrollEndDrag={() => this.isScrolling = false}
         >
           {this.getPagedPhotoView()}
         </ScrollView>
