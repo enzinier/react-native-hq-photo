@@ -1,0 +1,39 @@
+{
+  "name": "react-native-hq-photo",
+  "version": "0.0.1",
+  "description": "React native module to slide photo.",
+  "keywords": [
+    "react-native",
+    "react-native-photo",
+    "photo",
+    "photo-view",
+    "image",
+    "image-view"
+  ],
+  "homepage": "https://github.com/enzinier/react-native-hq-photo/blob/master/README.md",
+  "bugs": {
+    "url" : "https://github.com/enzinier/react-native-hq-photo/issues",
+    "email" : "enzinier+issue@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name" : "Jason Park",
+    "email" : "enzinier@gmail.com",
+    "url" : "https://enzinier.blogspot.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/enzinier/react-native-hq-photo"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.36.0"
+  }
+}
